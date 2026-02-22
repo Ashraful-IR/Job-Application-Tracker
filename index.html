@@ -22,6 +22,15 @@
       type="text/css"
     />
 
+    <!-- font awesome import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <style>
       * {
         font-family: "Geist", sans-serif;
@@ -31,7 +40,9 @@
   </head>
 
   <body class="container mx-auto p-5 space-y-3">
-    <section class="container mx-auto py-10 flex flex-col justify-between sticky top-0 bg-white z-20">
+    <section
+      class="container mx-auto py-10 flex flex-col justify-between sticky top-0 bg-white z-20"
+    >
       <h1 class="text-2xl font-bold text-left text-black mb-10">
         Job Application Tracker
       </h1>
@@ -64,7 +75,9 @@
       <p class="text-[16px] font-medium text-[#64748b]">8 jobs</p>
     </section>
     <!-- buttons  -->
-    <section class="buttons container mx-auto py-10 flex gap-5 sticky top-60 bg-white z-30">
+    <section
+      class="buttons container mx-auto py-10 flex gap-5 sticky top-60 bg-white z-30"
+    >
       <button class="btn btn-primary text-[12px] font-medium">All</button>
       <button
         class="btn btn-success btn-soft text-[#64748b] text-[12px] font-medium hover:text-[#ffffff]"
@@ -79,16 +92,24 @@
     </section>
     <!-- jobs details -->
     <section
+      id="Job-details"
       class="details container mx-auto p-6 space-y-5 border border-[#f1f2f4] rounded-xl"
-    >  
+    >
       <div class="job-card space-y-5 border border-[#f1f2f4] rounded-xl p-5">
-        <div class="1 gap-2">
-          <p class="text-[18px] font-semibold text-left text-black">
-            Mobile First Corp
-          </p>
-          <p class="text-[16px] font-regular text-left text-[#64748b]">
-            React Native Developer
-          </p>
+        <div class="1 flex justify-between items-center gap-2">
+          <div class="gap-2">
+            <p class="text-[18px] font-semibold text-left text-black">
+              Mobile First Corp
+            </p>
+            <p class="text-[16px] font-regular text-left text-[#64748b]">
+              React Native Developer
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-ghost btn-md">
+              <i class="fa-solid fa-trash text-[#ff0000]"></i>
+            </button>
+          </div>
         </div>
         <div class="2">
           <p class="text-[14px] font-regular text-left text-[#64748b]">
@@ -111,13 +132,20 @@
       </div>
 
       <div class="job-card space-y-5 border border-[#f1f2f4] rounded-xl p-5">
-        <div class="1 gap-2">
-          <p class="text-[18px] font-semibold text-left text-black">
-            NexaSoft Technologies
-          </p>
-          <p class="text-[16px] font-regular text-left text-[#64748b]">
-            Junior Backend Developer
-          </p>
+        <div class="1 1 flex justify-between items-center gap-2">
+          <div>
+            <p class="text-[18px] font-semibold text-left text-black">
+              NexaSoft Technologies
+            </p>
+            <p class="text-[16px] font-regular text-left text-[#64748b]">
+              Junior Backend Developer
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-ghost btn-md">
+              <i class="fa-solid fa-trash text-[#ff0000]"></i>
+            </button>
+          </div>
         </div>
         <div class="2">
           <p class="text-[14px] font-regular text-left text-[#64748b]">
@@ -141,13 +169,20 @@
       </div>
 
       <div class="job-card space-y-5 border border-[#f1f2f4] rounded-xl p-5">
-        <div class="1 gap-2">
-          <p class="text-[18px] font-semibold text-left text-black">
-            PixelForge Studio
-          </p>
-          <p class="text-[16px] font-regular text-left text-[#64748b]">
-            UI/UX Designer
-          </p>
+        <div class="1 flex justify-between items-center gap-2">
+          <div class="gap-2">
+            <p class="text-[18px] font-semibold text-left text-black">
+              PixelForge Studio
+            </p>
+            <p class="text-[16px] font-regular text-left text-[#64748b]">
+              UI/UX Designer
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-ghost btn-md">
+              <i class="fa-solid fa-trash text-[#ff0000]"></i>
+            </button>
+          </div>
         </div>
         <div class="2">
           <p class="text-[14px] font-regular text-left text-[#64748b]">
@@ -171,13 +206,20 @@
       </div>
 
       <div class="job-card space-y-5 border border-[#f1f2f4] rounded-xl p-5">
-        <div class="1 gap-2">
-          <p class="text-[18px] font-semibold text-left text-black">
-            CloudMatrix Inc.
-          </p>
-          <p class="text-[16px] font-regular text-left text-[#64748b]">
-            DevOps Engineer
-          </p>
+        <div class="1 flex justify-between items-center gap-2">
+          <div class="gap-2">
+            <p class="text-[18px] font-semibold text-left text-black">
+              CloudMatrix Inc.
+            </p>
+            <p class="text-[16px] font-regular text-left text-[#64748b]">
+              DevOps Engineer
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-ghost btn-md">
+              <i class="fa-solid fa-trash text-[#ff0000]"></i>
+            </button>
+          </div>
         </div>
         <div class="2">
           <p class="text-[14px] font-regular text-left text-[#64748b]">
@@ -201,13 +243,20 @@
       </div>
 
       <div class="job-card space-y-5 border border-[#f1f2f4] rounded-xl p-5">
-        <div class="1 gap-2">
-          <p class="text-[18px] font-semibold text-left text-black">
-            DataNest Analytics
-          </p>
-          <p class="text-[16px] font-regular text-left text-[#64748b]">
-            Data Analyst
-          </p>
+        <div class="1 flex justify-between items-center gap-2">
+          <div class="gap-2">
+            <p class="text-[18px] font-semibold text-left text-black">
+              DataNest Analytics
+            </p>
+            <p class="text-[16px] font-regular text-left text-[#64748b]">
+              Data Analyst
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-ghost btn-md">
+              <i class="fa-solid fa-trash text-[#ff0000]"></i>
+            </button>
+          </div>
         </div>
         <div class="2">
           <p class="text-[14px] font-regular text-left text-[#64748b]">
@@ -230,13 +279,20 @@
       </div>
 
       <div class="job-card space-y-5 border border-[#f1f2f4] rounded-xl p-5">
-        <div class="1 gap-2">
-          <p class="text-[18px] font-semibold text-left text-black">
-            GreenByte Solutions
-          </p>
-          <p class="text-[16px] font-regular text-left text-[#64748b]">
-            Software Engineering Intern
-          </p>
+        <div class="1 flex justify-between items-center gap-2">
+          <div class="gap-2">
+            <p class="text-[18px] font-semibold text-left text-black">
+              GreenByte Solutions
+            </p>
+            <p class="text-[16px] font-regular text-left text-[#64748b]">
+              Software Engineering Intern
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-ghost btn-md">
+              <i class="fa-solid fa-trash text-[#ff0000]"></i>
+            </button>
+          </div>
         </div>
         <div class="2">
           <p class="text-[14px] font-regular text-left text-[#64748b]">
@@ -259,13 +315,20 @@
       </div>
 
       <div class="job-card space-y-5 border border-[#f1f2f4] rounded-xl p-5">
-        <div class="1 gap-2">
-          <p class="text-[18px] font-semibold text-left text-black">
-            FinCore Systems
-          </p>
-          <p class="text-[16px] font-regular text-left text-[#64748b]">
-            Mobile App Developer (Flutter)
-          </p>
+        <div class="1 flex justify-between items-center gap-2">
+          <div class="gap-2">
+            <p class="text-[18px] font-semibold text-left text-black">
+              FinCore Systems
+            </p>
+            <p class="text-[16px] font-regular text-left text-[#64748b]">
+              Mobile App Developer (Flutter)
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-ghost btn-md">
+              <i class="fa-solid fa-trash text-[#ff0000]"></i>
+            </button>
+          </div>
         </div>
         <div class="2">
           <p class="text-[14px] font-regular text-left text-[#64748b]">
@@ -288,13 +351,20 @@
       </div>
 
       <div class="job-card space-y-5 border border-[#f1f2f4] rounded-xl p-5">
-        <div class="1 gap-2">
-          <p class="text-[18px] font-semibold text-left text-black">
-            LogiTech Innovations
-          </p>
-          <p class="text-[16px] font-regular text-left text-[#64748b]">
-            System Support Engineer
-          </p>
+        <div class="1 flex justify-between items-center gap-2">
+          <div class="gap-2">
+            <p class="text-[18px] font-semibold text-left text-black">
+              LogiTech Innovations
+            </p>
+            <p class="text-[16px] font-regular text-left text-[#64748b]">
+              System Support Engineer
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-ghost btn-md">
+              <i class="fa-solid fa-trash text-[#ff0000]"></i>
+            </button>
+          </div>
         </div>
         <div class="2">
           <p class="text-[14px] font-regular text-left text-[#64748b]">
@@ -317,7 +387,8 @@
       </div>
     </section>
 
-    <section id="No-job"
+    <section
+      id="No-job"
       class="N-Available container mx-auto flex flex-col justify-between items-center py-15 px-10 space-y-5 border-1 border-[#f1f2f4] rounded-[8px]"
     >
       <img src="jobs.png" alt="" />
