@@ -9,6 +9,13 @@
 //   noJob.style.display = "none";
 // }
 
-// Hide the No job Section by defauilt 
-const noJob = document.getElementById("No-job");
-noJob.classList.add("hidden");
+function showOnly(id) {
+  const jobDetails = document.getElementById("Job-details");
+  const noJob = document.getElementById("No-job");
+  noJob.style.display = "flex";
+  jobDetails.style.display = "none";
+  if (id === "Job-details") {
+    noJob.style.display = "none";
+    jobDetails.style.display = "block";
+  }
+}
