@@ -26,4 +26,4 @@ const totalJobs = document.getElementById("total-jobs");
 // const interviewedJobs = document.getElementById("interviewed-jobs");
 // const rejectedJobs = document.getElementById("rejected-jobs");
 
-totalJobs.innerText= jobDetails.children.length;
+totalJobs.innerText = jobDetails.children.length;

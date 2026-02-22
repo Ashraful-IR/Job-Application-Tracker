@@ -12,3 +12,6 @@
 // Hide the No job Section by defauilt 
 const noJob = document.getElementById("No-job");
 noJob.classList.add("hidden");
+
+
+
