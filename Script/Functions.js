@@ -19,3 +19,11 @@ function showOnly(id) {
     jobDetails.style.display = "block";
   }
 }
+
+const jobDetails = document.getElementById("Job-details");
+// const noJob = document.getElementById("No-job");
+const totalJobs = document.getElementById("total-jobs");
+// const interviewedJobs = document.getElementById("interviewed-jobs");
+// const rejectedJobs = document.getElementById("rejected-jobs");
+
+totalJobs.innerText= jobDetails.children.length;
