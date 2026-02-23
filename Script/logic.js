@@ -40,3 +40,11 @@ rejectedBtn.addEventListener("click", function () {
 allJobsBtn.addEventListener("click", function () {
   hideAll();
 });
+
+document.querySelectorAll(".btn-ghost").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    btn.closest(".job-card").remove();
+    totalJobs.innerText = jobDetails.children.length;
+  });
+});
+
