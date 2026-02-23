@@ -56,7 +56,7 @@
         <h2 class="text-[20px] font-semibold text-left mb-5 text-[#002c5c]">
             Available Jobs
         </h2>
-        <p class="text-[16px] font-medium text-[#64748b]">8 jobs</p>
+        <p id="available-jobs" class="text-[16px] font-medium text-[#64748b]">8 jobs</p>
     </section>
     <!-- buttons  -->
     <section class="buttons container mx-auto py-10 flex gap-5 sticky top-60 bg-white z-30">
@@ -103,8 +103,8 @@
                 </p>
             </div>
             <div class="4">
-                <button class="btn btn-outline btn-success">INTERVIEW</button>
-                <button class="btn btn-outline btn-error">REJECTED</button>
+                <button class="interviewBtn btn btn-outline btn-success">INTERVIEW</button>
+                <button class="rejectBtn btn btn-outline btn-error">REJECTED</button>
             </div>
         </div>
 
@@ -140,8 +140,8 @@
                 </p>
             </div>
             <div class="4">
-                <button class="btn btn-outline btn-success">INTERVIEW</button>
-                <button class="btn btn-outline btn-error">REJECTED</button>
+                <button class="interviewBtn btn btn-outline btn-success">INTERVIEW</button>
+                <button class="rejectBtn btn btn-outline btn-error">REJECTED</button>
             </div>
         </div>
 
@@ -177,8 +177,8 @@
                 </p>
             </div>
             <div class="4">
-                <button class="btn btn-outline btn-success">INTERVIEW</button>
-                <button class="btn btn-outline btn-error">REJECTED</button>
+                <button class="interviewBtn btn btn-outline btn-success">INTERVIEW</button>
+                <button class="rejectBtn btn btn-outline btn-error">REJECTED</button>
             </div>
         </div>
 
@@ -214,8 +214,8 @@
                 </p>
             </div>
             <div class="4">
-                <button class="btn btn-outline btn-success">INTERVIEW</button>
-                <button class="btn btn-outline btn-error">REJECTED</button>
+                <button class="interviewBtn btn btn-outline btn-success">INTERVIEW</button>
+                <button class="rejectBtn btn btn-outline btn-error">REJECTED</button>
             </div>
         </div>
 
@@ -250,8 +250,8 @@
                 </p>
             </div>
             <div class="4">
-                <button class="btn btn-outline btn-success">INTERVIEW</button>
-                <button class="btn btn-outline btn-error">REJECTED</button>
+                <button class="interviewBtn btn btn-outline btn-success">INTERVIEW</button>
+                <button class="rejectBtn btn btn-outline btn-error">REJECTED</button>
             </div>
         </div>
 
@@ -286,8 +286,8 @@
                 </p>
             </div>
             <div class="4">
-                <button class="btn btn-outline btn-success">INTERVIEW</button>
-                <button class="btn btn-outline btn-error">REJECTED</button>
+                <button class="interviewBtn btn btn-outline btn-success">INTERVIEW</button>
+                <button class="rejectBtn btn btn-outline btn-error">REJECTED</button>
             </div>
         </div>
 
@@ -322,8 +322,8 @@
                 </p>
             </div>
             <div class="4">
-                <button class="btn btn-outline btn-success">INTERVIEW</button>
-                <button class="btn btn-outline btn-error">REJECTED</button>
+                <button class="interviewBtn btn btn-outline btn-success">INTERVIEW</button>
+                <button class="rejectBtn btn btn-outline btn-error">REJECTED</button>
             </div>
         </div>
 
@@ -358,16 +358,16 @@
                 </p>
             </div>
             <div class="4">
-                <button class="btn btn-outline btn-success">INTERVIEW</button>
-                <button class="btn btn-outline btn-error">REJECTED</button>
+                <button class="interviewBtn btn btn-outline btn-success">INTERVIEW</button>
+                <button class="rejectBtn btn btn-outline btn-error">REJECTED</button>
             </div>
         </div>
     </section>
 
     <section id="interviewed"
         class="N-Available container mx-auto flex flex-col justify-between items-center py-15 px-10 space-y-5 border-1 border-[#f1f2f4] rounded-[8px]">
-        <img src="jobs.png" alt="" />
-        <div class="1 flex flex-col justify-between items-center gap-2">
+        <img id="interview-img" src="jobs.png" alt="" />
+        <div id="interviewDiv" class="1 flex flex-col justify-between items-center gap-2">
             <p class="text-[18px] font-semibold text-left text-black">
                 No jobs available
             </p>
@@ -379,8 +379,8 @@
 
     <section id="rejected"
         class="N-Available container mx-auto flex flex-col justify-between items-center py-15 px-10 space-y-5 border-1 border-[#f1f2f4] rounded-[8px]">
-        <img src="jobs.png" alt="" />
-        <div class="1 flex flex-col justify-between items-center gap-2">
+        <img id="rejected-img" src="jobs.png" alt="" />
+        <div id="rejectedDiv" class="1 flex flex-col justify-between items-center gap-2">
             <p class="text-[18px] font-semibold text-left text-black">
                 No jobs available
             </p>
