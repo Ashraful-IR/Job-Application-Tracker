@@ -1,17 +1,50 @@
-// const jobDetails = document.getElementById("Job-details");
-// const noJob = document.getElementById("No-job");
+const jobDetails = document.getElementById("Job-details");
+const intervieweSection = document.getElementById("interviewed");
+const rejecteSection = document.getElementById("rejected");
 
-// // Example: if no job cards exist
-// if (jobDetails.children.length === 0) {
-//   jobDetails.style.display = "none";
-//   noJob.style.display = "flex";
-// } else {
-//   noJob.style.display = "none";
-// }
+const totalJobs = document.getElementById("total-jobs");
+const totalinterview = document.getElementById("interviewed-jobs");
+const totalreject = document.getElementById("rejected-jobs");
 
-// Hide the No job Section by defauilt 
-const noJob = document.getElementById("No-job");
-noJob.classList.add("hidden");
+const interviewBtn = document.getElementById("interviewBtn");
+const rejectedBtn = document.getElementById("rejectedBtn");
+const allJobsBtn = document.getElementById("allJobs");
 
+const a=intervieweSection.children.length-2;
+const b=rejecteSection.children.length-2;
 
+totalJobs.innerText = jobDetails.children.length;
+totalinterview.innerText = a;
+totalreject.innerText = b;
 
+// noJob.classList.add("hidden");
+// intervieweSection.classList.add("hidden");
+// rejecteSection.classList.add("hidden");
+
+// interviewBtn.addEventListener("click", function () {
+//   hideAll();
+//   intervieweSection.style.display = "flex";
+// });
+
+function hideAll() {
+  jobDetails.classList.remove("hidden");
+  intervieweSection.classList.add("hidden");
+  rejecteSection.classList.add("hidden");
+}
+hideAll();
+
+interviewBtn.addEventListener("click", function () {
+  hideAll();
+  jobDetails.classList.add("hidden");
+  intervieweSection.classList.remove("hidden");
+});
+
+rejectedBtn.addEventListener("click", function () {
+  hideAll();
+  jobDetails.classList.add("hidden");
+  rejecteSection.classList.remove("hidden");
+});
+
+allJobsBtn.addEventListener("click", function () {
+  hideAll();
+});

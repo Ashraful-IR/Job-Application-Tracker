@@ -28,7 +28,7 @@
             font-family: "Geist", sans-serif;
         }
     </style>
-    
+
 </head>
 
 <body class="container mx-auto p-5 space-y-3">
@@ -60,11 +60,13 @@
     </section>
     <!-- buttons  -->
     <section class="buttons container mx-auto py-10 flex gap-5 sticky top-60 bg-white z-30">
-        <button onclick="showOnly('Job-details')"  class="btn btn-primary text-[12px] font-medium">All</button>
-        <button onclick="showOnly('No-job')" class="btn btn-success btn-soft text-[#64748b] text-[12px] font-medium hover:text-[#ffffff]">
+        <button id="allJobs" class="btn btn-primary text-[12px] font-medium">All</button>
+        <button id="interviewBtn"
+            class="btn btn-success btn-soft text-[#64748b] text-[12px] font-medium hover:text-[#ffffff]">
             Interviewed
         </button>
-        <button onclick="showOnly('No-job')" class="btn btn-error btn-soft text-[#64748b] text-[12px] font-medium hover:text-[#ffffff]">
+        <button id="rejectedBtn"
+            class="btn btn-error btn-soft text-[#64748b] text-[12px] font-medium hover:text-[#ffffff]">
             Rejected
         </button>
     </section>
@@ -362,7 +364,20 @@
         </div>
     </section>
 
-    <section id="No-job"
+    <section id="interviewed"
+        class="N-Available container mx-auto flex flex-col justify-between items-center py-15 px-10 space-y-5 border-1 border-[#f1f2f4] rounded-[8px]">
+        <img src="jobs.png" alt="" />
+        <div class="1 flex flex-col justify-between items-center gap-2">
+            <p class="text-[18px] font-semibold text-left text-black">
+                No jobs available
+            </p>
+            <p class="text-[16px] font-regular text-center text-[#64748b]">
+                Check back soon for new job opportunities
+            </p>
+        </div>
+    </section>
+
+    <section id="rejected"
         class="N-Available container mx-auto flex flex-col justify-between items-center py-15 px-10 space-y-5 border-1 border-[#f1f2f4] rounded-[8px]">
         <img src="jobs.png" alt="" />
         <div class="1 flex flex-col justify-between items-center gap-2">
