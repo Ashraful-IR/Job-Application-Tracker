@@ -17,14 +17,6 @@ totalJobs.innerText = jobDetails.children.length;
 totalinterview.innerText = a;
 totalreject.innerText = b;
 
-// noJob.classList.add("hidden");
-// intervieweSection.classList.add("hidden");
-// rejecteSection.classList.add("hidden");
-
-// interviewBtn.addEventListener("click", function () {
-//   hideAll();
-//   intervieweSection.style.display = "flex";
-// });
 
 function hideAll() {
   jobDetails.classList.remove("hidden");
