@@ -12,6 +12,6 @@ Ans:Event bubbling is a machanism appeared when an event like click strats. clic
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
 Ans:Event delegation মানে হলো  parent element দিয়ে তার সব child element-এর ইভেন্ট handle করা। প্রতিটি child-এর জন্য আলাদা listener দেওয়ার বদলে, শুধু parent-এর উপর একটি listener দেওয়া হয়, যা child-এর ইভেন্ট ঘটলে তা detect এবং handle করে।
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
-Ans:preventDefault() → ব্রাউজারের ডিফল্ট কাজ বন্ধ করে।
+Ans:preventDefault() - ব্রাউজারের ডিফল্ট কাজ বন্ধ করে।
 
-stopPropagation() → ইভেন্টের parent-এ যাওয়া বন্ধ করে।
+stopPropagation() - ইভেন্টের parent-এ যাওয়া বন্ধ করে।
